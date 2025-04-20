@@ -1,0 +1,75 @@
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      background: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 400px;
+      background: #fff;
+      padding: 40px 20px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+    }
+
+    .heart {
+      width: 120px;
+      height: 120px;
+      margin: 0 auto 30px;
+      /* background: radial-gradient(circle at center, #d147ff, #a200ff); */
+      animation: blob 6s infinite ease-in-out;
+      
+      
+    }
+    .heart {
+      width: 120px;
+      height: 120px;
+      margin: 0 auto 30px;
+      
+    }
+    
+    @keyframes blob {
+      0%, 100% {
+        transform: scale(.1) rotate(360deg);
+      }
+      50% {
+        transform: scale(.5) rotate(0deg);
+      }
+    }
+
+    h2 {
+      color: #a200ff;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #777;
+      margin-bottom: 30px;
+      font-size: 14px;
+    }
+
+    button {
+      background: #a200ff;
+      color: white;
+      border: none;
+      padding: 12px 30px;
+      font-size: 14px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #7c00c4;
+    }

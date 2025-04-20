@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+  }
+
+  body {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .login-container {
+    width: 320px;
+    padding: 30px 25px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(213, 71, 255, 0.2);
+    text-align: center;
+  }
+
+  .heart {
+    margin-bottom: 20px;
+    animation: pulse 2s infinite ease-in-out;
+  }
+
+  svg path {
+    fill: #d147ff;
+    filter: drop-shadow(0 0 8px #d147ff);
+  }
+
+  h2 {
+    margin-bottom: 10px;
+    color: #d147ff;
+    font-size: 22px;
+  }
+
+  p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1.5px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+
+  input:focus {
+    border-color: #d147ff;
+  }
+
+  button {
+    width: 100%;
+    background-color: #d147ff;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+
+  button:hover {
+    background-color: #b137e3;
+  }
+
+  .signup-text {
+    margin-top: 18px;
+    font-size: 14px;
+    color: #555;
+  }
+
+  .signup-text a {
+    color: #d147ff;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 5px;
+  }
+
+  .signup-text a:hover {
+    text-decoration: underline;
+  }
+
+  @keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+  }
+  .login-container {
+    position: relative;
+    width: 350px;
+    padding: 30px 20px 50px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(209, 71, 255, 0.2);
+    overflow: hidden;
+    /* border-bottom: 3px solid black;  */
+  }
+  
+  .login-container::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 0%;
+    background: #d147ff;
+    transition: width 2s ease;
+  }
+  .login-container.animate-border::after {
+    width: 100%;
+  }
+  
