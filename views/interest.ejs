@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Select Interests</title>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #faf9fe;
+}
+
+.interest-container {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+}
+
+.interest-container h2 {
+  font-size: 24px;
+  margin-bottom: 0.5rem;
+  color: #5f3dc4;
+}
+
+.interest-container p {
+  margin-bottom: 2rem;
+  color: #666;
+}
+
+.interest-grid {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+
+.interest-card {
+  width: 80px;
+  height: 120px;
+  padding: 10px;
+  border-radius: 15px;
+  border: 2px solid #ddd;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.interest-card:hover {
+  border-color: #5f3dc4;
+  transform: scale(1.05);
+}
+
+.interest-card img {
+  width: 100%;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 8px;
+}
+
+.interest-card label {
+  display: block;
+  font-size: 14px;
+  color: #333;
+}
+
+.continue-btn {
+  padding: 10px 20px;
+  background: #5f3dc4;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.continue-btn:hover {
+  background: #472ab3;
+}
+.interest-card.selected {
+  border-color: #5f3dc4;
+  background: #f0ebff;
+}
+
+
+  </style>
+</head>
+<body>
+<form action="profile" method="post">
+    <div class="interest-container">
+        <h2>What are you interested in?</h2>
+        <p>Select all that apply</p>
+        <div class="interest-grid">
+            <div class="interest-card" data-value="Women">
+              <img src="https://cdn-icons-png.flaticon.com/512/2922/2922506.png" alt="Women" />
+              <label>Women</label>
+            </div>
+            <div class="interest-card" data-value="Men">
+              <img src="https://cdn-icons-png.flaticon.com/512/2922/2922510.png" alt="Men" />
+              <label>Men</label>
+            </div>
+            <div class="interest-card" data-value="Everyone">
+              <img src="https://cdn-icons-png.flaticon.com/512/2922/2922656.png" alt="Everyone" />
+              <label>Everyone</label>
+            </div>
+          </div>
+          
+    
+        <button class="continue-btn">Continue</button>
+      </div>
+</form>
+</body>
+</html>
