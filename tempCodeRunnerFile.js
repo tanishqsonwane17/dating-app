@@ -1,0 +1,1 @@
+var indexRouter = require('./routes/index');
